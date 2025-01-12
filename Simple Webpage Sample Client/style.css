@@ -1,0 +1,277 @@
+html, body{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #e3d5ba;
+}
+main{
+    flex: 1;
+}
+
+.child{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+.navbar{
+    background-color: #739774;
+	border-radius: 5px;
+	margin: 2px;
+	padding: 10px;
+}
+.flex-container{
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+}
+ul{
+    list-style: none;
+    display: inline-block;
+    padding: 0 20px;
+}
+.navbar a{
+    text-align: center;
+    text-decoration: none;
+    color: #e3d5ba;
+    padding: 14px 16px;
+    font-family: Tahoma;
+}
+.navbar:hover{
+    background-color: #255054;
+    color: #e3d5ba;
+}
+.navbar:active{
+    background-color: #255054;
+    color: #e3d5ba;
+}
+
+.banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("bannerphoto.jpg");
+    border-radius: 25px;
+    height: 50%;
+    background-position: justify;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin: 0 auto;
+    min-width: 750px;
+    max-width: 750px;
+    flex-shrink: 0;
+}
+
+.banner-text {
+    padding: 15px 20px;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    color: white;
+    font-family: sans-serif;
+}
+.banner-title{
+    position: relative;
+    top: 10px;
+    margin: 0;
+    color: #e3d5ba;
+    font-family: 'Playfair Display', serif;
+}
+.body-flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    min-width: 750px;
+    max-width: 100%;
+    justify-content: center;
+    width: 100%;
+    gap: 5px;
+}
+.flex-box1{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    background-color: #daba5b;
+    border-radius: 25px;
+    width: 10%;
+    padding: 15px;
+    margin-right: 10px;
+    min-width: 200px;
+    max-width: 200px;
+    flex-shrink: 0;
+    
+}
+.service{
+    display: flex;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+.servicelink{
+    text-align: right;
+    color: #739774;
+}
+.flex-box2{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto; 
+    background-color: #bf6741;
+    width: 10%;
+    border-radius: 25px;
+    padding: 15px;
+    margin-right: 10px;
+    min-width: 200px;
+    max-width: 200px;
+    flex-shrink: 0;
+}
+.gallery{
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+.gallerybutton{
+    background-color:#daba5b;
+    border: none;
+    color: #fff; 
+    padding: 10px 15px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    display: block; 
+    margin: 0 auto; 
+    font-size: 1rem; 
+}
+a {
+    text-decoration: none;
+}
+.gallerybutton:hover {
+    background-color: #739774; 
+}
+.flex-box3{
+    flex: 1 1 auto;
+    background-color: #255054;
+    width: 10%;
+    border-radius: 25px;
+    padding: 15px;
+    min-width: 250px;
+    max-width: 250px;
+}
+
+.mail {
+    display: block;
+    width: 40%;
+    height: auto;
+    margin: 10px auto 15px auto; ;
+    object-fit: contain;
+}
+.flex-box3 form {
+    display: flex;
+    flex-direction: column; 
+}
+input[type="email"] {
+    width: 100%; 
+    padding: 5px; 
+    border: 1px solid #739774; 
+    border-radius: 5px;
+    box-sizing: border-box; 
+}
+textarea{
+    width: 100%; 
+    padding: 10px; 
+    border: 1px solid #739774; 
+    border-radius: 5px; 
+    box-sizing: border-box; 
+
+}
+.formfont {
+    color: #e3d5ba;
+}
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap'); 
+
+.boxtitle {
+    margin: 15px 0;
+    text-align: center; 
+    font-family: 'Playfair Display', serif; 
+    color: #fefefe; 
+}
+.bulletlist {
+    list-style: none; 
+    padding-left: 0;  
+    margin: 10px 0 10px 0;
+}
+
+.bulletlist li {
+    position: relative; 
+    padding-left: 20px; 
+    margin-bottom: 10px;
+    white-space: normal;
+}
+.bulletlist li:last-child {
+    width: 100%; 
+    margin-bottom: 0; 
+}
+
+.bulletlist li::before {
+    content: '✓'; 
+    position: absolute; 
+    left: 0; 
+    color:#739774
+}
+footer {
+    display: flex;                
+    justify-content: space-between; 
+    align-items: center;         
+    background-color: #e3d5ba;   
+    padding: 10px 20px;          
+    position: relative;          
+    width: 100%;                 
+    margin: 0 auto;  
+    border-top: 2px dotted #739774;   
+    max-width: 750px;
+    bottom: 0;
+}
+
+.footers {
+    display: flex;               
+    justify-content: space-between; 
+    max-width: 750px;
+    width: 100%;      
+    margin: 0 auto;         
+}
+.footers img{
+    width: 30px;
+    margin-right: auto;
+}
+.copyright {
+    color: #739774;             
+    margin: 0;  
+    text-align: right;
+    flex-grow: 1;         
+    font-size: small;       
+}
+
+textarea::placeholder {
+    color: #739774;
+    opacity: 0.7;
+    font-size: small;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+input[type="email"]::placeholder {
+    color: #739774; 
+    opacity: 0.7;
+    font-size: small;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+textarea {
+    margin-top: 10px;
+}
+.msgsubmit {
+    display: flex;
+    flex-direction: row;
+    margin-left: 155px;
+    margin-top: 5px;
+}
+.flex-box2 .gallery {
+    box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.5); 
+    border-radius: 10px; 
+}
