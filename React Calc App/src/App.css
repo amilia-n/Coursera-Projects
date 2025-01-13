@@ -1,0 +1,128 @@
+/* Set the entire page background to #FFE6EE */
+body {
+  background-color: #FFE6EE; /* Light pink */
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Title styling (above the calculator) */
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 2rem;
+  font-weight: normal;
+  color: grey; /* Grey color for the title */
+  margin-bottom: 1.5rem; /* Space between title and calculator */
+  white-space: nowrap; /* Ensure the title fits in one line */
+}
+
+/* Base styles for the calculator container */
+.calculator {
+  border-radius: 10px;
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15), 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+  margin: 2em auto;
+  max-width: 22rem;
+  overflow: hidden;
+  color: hsl(202, 11%, 29%);
+  background-color: white; /* Keep calculator background white */
+  padding: 2rem;
+}
+
+/* Output area to display result */
+.calculator__output {
+  background: hsl(255, 100%, 100%);
+  font-size: 4.2rem;
+  padding: 3rem 1.25rem 0.5rem;
+  text-align: right;
+  height: 5rem;
+  border-radius: 10px;
+}
+
+/* Grid layout for the calculator keys */
+.calculator__keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns for the number and operator keys */
+  grid-template-rows: repeat(5, 1fr); /* 5 rows for the button grid */
+  gap: 1px;
+  background: hsl(255, 100%, 100%);
+  padding: 0.5rem;
+  height: auto;
+}
+
+/* Style for each key */
+.calculator__key {
+  background: hsl(210, 25%, 95%);
+  border: none;
+  padding: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 40px;
+  transition: background 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  width: 70px;
+  min-width: 70px;
+}
+
+/* Active state for keys (when clicked) */
+.calculator__key:active,
+.calculator__key:focus {
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3) inset;
+  outline: none;
+}
+
+/* Styles for operator buttons (+, -, ×, ÷) */
+.calculator__key--operator {
+  background: hsl(208, 25%, 86%);
+}
+
+.calculator__key--operator:active {
+  background: hsl(208, 24%, 80%);
+}
+
+/* AC Button styling */
+.calculator__key--ac {
+  background: #FADADD; /* Pastel pink */
+  grid-column: span 1; /* AC now takes up only one column */
+  height: 70px;
+  font-weight: bold;
+  color: white;
+  border-radius: 40px;
+}
+
+/* Equal Button styling (thinner and pastel pink) */
+.calculator__key--enter {
+  background: #FADADD; /* Pastel pink */
+  grid-column: span 4; /* Equal button spans all columns */
+  height: 60px; /* Slightly thinner */
+  width: 100%; /* Spans full width of the parent container */
+  border-radius: 40px;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Adjustments for layout of Row 4 */
+.calculator__key--decimal,
+.calculator__key--zero,
+.calculator__key--divide {
+  width: 70px;
+  height: 70px;
+}
+
+/* Optional style for Decimal button */
+.calculator__key--decimal {
+  width: 70px;
+  height: 70px;
+}
+
+/* Add extra space between row 4 and row 5 */
+.calculator__keys > button:nth-child(16) {
+  margin-bottom: 1mm; /* Adds 1mm gap between AC/0/. and the equal button */
+}
